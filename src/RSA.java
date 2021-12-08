@@ -84,11 +84,11 @@ public class RSA {
         int blockSize = getBlockSize(n);
         // Find M
         for (int k = 0; k < encMessage.length(); k += blockSize) {
-            // try{
+            try{
             passedValue = Long.valueOf(encMessage.substring(k, k + blockSize));
-            // } catch (StringIndexOutOfBoundsException ex){
-            // passedValue = Long.valueOf(encMessage.substring(k, encMessage.length()));
-            // }
+            } catch (StringIndexOutOfBoundsException ex){
+                passedValue = Long.valueOf(encMessage.substring(k, encMessage.length()));
+            }
             BigInteger M = BigInteger.valueOf(passedValue);
             M = M.modPow(BigInteger.valueOf(d), BigInteger.valueOf(n));
             temp = M + "";

@@ -69,7 +69,7 @@ public class RSA {
             blockMessage = ""; // reset block message to get the next value
 
         }
-        System.out.println("Your Private key 'd' is: " + BigInteger.valueOf(e).modInverse(BigInteger.valueOf(n)));
+        //System.out.println("Your Private key 'd' is: " + BigInteger.valueOf(e).modInverse(BigInteger.valueOf(n)));
         return encMessage;
     }
 

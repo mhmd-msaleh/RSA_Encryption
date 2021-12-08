@@ -3,7 +3,7 @@ import java.io.FileOutputStream;
 import java.math.BigInteger;
 import java.util.Scanner;
 
-public class EncryptDriver{
+public class EncryptionDriver{
     public static void main(String[] args) throws Exception{
      RSA rsa = new RSA();
         // String encrypted = rsa.encrypt("STOP", 7912, 13);

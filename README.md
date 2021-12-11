@@ -3,8 +3,8 @@
 
  
 I. Initial Step (Prepare the program):
-    1. Open a shell terminal and navigate to RSA_Encryption directory.  
-    2. Compile the java classes, use the following command: 
+1. Open a shell terminal and navigate to RSA_Encryption directory.  
+2. Compile the java classes, use the following command: 
 ```console
 javac RSA.java EncryptionDriver.java DecryptionDriver.java 
 ```
@@ -20,7 +20,7 @@ java EncryptionDriver
 ``` 
 3. The encrypted text will be in files/file.rsa file. 
 
-For Decryption: 
+III. For Decryption: 
 1. Use the file named file.rsa (if not found, make one) located in "files" directory, and include the following: 
     - The encrypted text (without white spaces) consisting of only numbers. 
 2. Run DecryptionDriver, to do that use the follwing command:   

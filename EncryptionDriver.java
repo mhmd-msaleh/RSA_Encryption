@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class EncryptionDriver{
     public static void main(String[] args) throws Exception{
         RSA rsa = new RSA();
-        File inputFile = new File("files","Encrypt.txt");
+        File inputFile = new File("files","file.txt");
         FileOutputStream outputFile = new FileOutputStream(new File("files","file.rsa"));
         Scanner fScanner = new Scanner(inputFile);
          

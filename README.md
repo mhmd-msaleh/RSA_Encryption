@@ -14,7 +14,7 @@ II. For Encryption:
         - The first line must contains the public keys e and n respectively, seperated be aspace.
         - The second line onward contains the text to by encrypted, you may use a newline, space, and any of the these characters. 
             ('.', '?', '!', ',', ';', ':', '-', '(', ')', '{', '}', '[', ']', single quotes, double quotes)
-    2. Run EncryptionDriver, to do that use the following command. 
+    2. Run EncryptionDriver, to do that use the following command.
 ```console
 java EncryptionDriver``` 
     3. The encrypted text will be in files/file.rsa file. 
@@ -28,5 +28,5 @@ java DecryptionDriver```
     3. To decrypt the sample file.txt provided use d = 2832537816223, n = 99808491759239. 
     4. The decrypted file will be in files/file.dec file. 
 
-Please note: In order for the program to run successfully, it is important to include all text files in "files" directory. 
+Please note: In order for the program to run successfully, it is important to include the required text file to be encrypted in "files" directory, and it must be named as "file.txt". 
 

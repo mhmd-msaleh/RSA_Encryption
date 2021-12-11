@@ -7,7 +7,7 @@ public class EncryptionDriver{
     public static void main(String[] args) throws Exception{
         RSA rsa = new RSA();
         File inputFile = new File("files","Encrypt.txt");
-        FileOutputStream outputFile = new FileOutputStream(new File("files","Encrypt.rsa"));
+        FileOutputStream outputFile = new FileOutputStream(new File("files","file.rsa"));
         Scanner fScanner = new Scanner(inputFile);
          
         long e = fScanner.nextInt();

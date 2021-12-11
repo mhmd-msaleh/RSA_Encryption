@@ -16,7 +16,8 @@ II. For Encryption:
             ('.', '?', '!', ',', ';', ':', '-', '(', ')', '{', '}', '[', ']', single quotes, double quotes)
     2. Run EncryptionDriver, to do that use the following command.
 ```console
-java EncryptionDriver``` 
+java EncryptionDriver
+``` 
     3. The encrypted text will be in files/file.rsa file. 
 
 For Decryption: 
@@ -24,7 +25,8 @@ For Decryption:
     - The encrypted text (without white spaces) consisting of only numbers. 
     2. Run DecryptionDriver, to do that use the follwing command:   
 ```console
-java DecryptionDriver```
+java DecryptionDriver
+```
     3. To decrypt the sample file.txt provided use d = 2832537816223, n = 99808491759239. 
     4. The decrypted file will be in files/file.dec file. 
 

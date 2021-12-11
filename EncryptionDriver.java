@@ -9,8 +9,8 @@ public class EncryptionDriver{
         FileOutputStream outputFile = new FileOutputStream(new File("files","file.rsa"));
         Scanner fScanner = new Scanner(inputFile);
          
-        long e = fScanner.nextInt();
-        long n = fScanner.nextInt();
+        long e = fScanner.nextLong();
+        long n = fScanner.nextLong();
         fScanner.nextLine();
         String Message = "";
         // Retrieve the message

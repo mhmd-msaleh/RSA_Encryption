@@ -1,5 +1,4 @@
 import java.math.BigInteger;
-import java.util.Random;
 import java.util.HashMap;
 
 public class RSA {
@@ -44,7 +43,7 @@ public class RSA {
         for(int i = 0; i<indexedMessage.length(); i++){
             blockMessage = blockMessage + indexedMessage.charAt(i);    
             if(Math.floorMod(i+1, blockSize) == 0 && i < indexedMessage.length() - (blockMessage.length() - blockSize)){
-                long blockValue = Integer.parseInt(blockMessage);  
+                long blockValue = Long.parseLong(blockMessage);  
                 BigInteger C = BigInteger.valueOf(blockValue);
                 C = C.modPow(BigInteger.valueOf(E), BigInteger.valueOf(N));
                 String temp = C +"";
@@ -59,10 +58,9 @@ public class RSA {
         // Step4: Assign dummy values to the last block and compute Ci
         if(!blockMessage.isEmpty()){
             while(blockMessage.length() < blockSize){   
-                Random ran = new Random();
-                blockMessage = blockMessage + ran.nextInt(10);
+                blockMessage = blockMessage + 78;       //pad spaces
             }    
-            long blockValue = Integer.parseInt(blockMessage);
+            long blockValue = Long.parseLong(blockMessage);
             BigInteger C = BigInteger.valueOf(blockValue);
             C = C.modPow(BigInteger.valueOf(E), BigInteger.valueOf(N));
             String temp = C +"";

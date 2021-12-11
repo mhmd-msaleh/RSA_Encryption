@@ -1,8 +1,6 @@
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.math.BigInteger;
 import java.util.Scanner;
 
 /**
@@ -20,11 +18,8 @@ public class DecryptionDriver {
         RSA rsa = new RSA();
 
         //Variables
-        String decryptedValues = "";
         String decryptedMessage = "";
-        String temp;
-        long blockSize;
-        long passedValue, d, n, max_value = 0;
+        long d, n;
 
         //User input
         System.out.print("Enter the value of d: ");
@@ -41,6 +36,7 @@ public class DecryptionDriver {
             outputFile.write(decryptedMessage.charAt(i));
         }
         outputFile.close();
+        fScanner.close();
         System.out.println("Decryption Completed!");
     }
 }

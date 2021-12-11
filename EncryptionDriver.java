@@ -1,6 +1,5 @@
 import java.io.File;
 import java.io.FileOutputStream;
-import java.math.BigInteger;
 import java.util.Scanner;
 
 public class EncryptionDriver{

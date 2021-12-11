@@ -12,11 +12,11 @@ public class DecryptionDriver {
 
     public static void main(String[] args) throws IOException {
         //Scanners
-        File input = new File("Encrypt.rsa");
+        File input = new File("\\Encrypt.rsa");
         Scanner fScanner = new Scanner(input);
         Scanner fScanner2 = new Scanner(input);
         Scanner kbScanner = new Scanner(System.in);
-        FileOutputStream outputFile = new FileOutputStream("Decrypt.dec");
+        FileOutputStream outputFile = new FileOutputStream("\\Decrypt.dec");
 
         RSA rsa = new RSA();
 
@@ -41,6 +41,7 @@ public class DecryptionDriver {
         for(int i =0; i<decryptedMessage.length(); i++){
             outputFile.write(decryptedMessage.charAt(i));
         }
-        System.out.println(decryptedMessage);
+        outputFile.close();
+        System.out.println("Decryption Completed!");
     }
 }

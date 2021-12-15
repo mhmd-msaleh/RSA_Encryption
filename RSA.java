@@ -15,7 +15,7 @@ public class RSA {
         return numericText;
     }
 
-    private long getBlockSize(long N) {
+    public long getBlockSize(long N) {
         long divisor = 78;
         while (N > divisor) {
             divisor = divisor * 100 + 78;

@@ -10,7 +10,7 @@ public class DecryptionDriver {
 
     public static void main(String[] args) throws IOException {
         //Scanners
-        File input = new File("files", "file.rsa");
+        File input = new File("bonus_files", "file.rsa");
         Scanner fScanner = new Scanner(input);
         Scanner kbScanner = new Scanner(System.in);
         FileOutputStream outputFile = new FileOutputStream(new File("files", "file.dec"));

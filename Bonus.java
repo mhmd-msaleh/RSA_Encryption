@@ -16,7 +16,7 @@ public class Bonus {
         //     dictionary.add(filescan.nextLine().toUpperCase());
         // }
         FileOutputStream outputFile = new FileOutputStream(new File("bonus_files", "p1.dec"));
-        long n = 797527;
+        long n = 9999;
         RSA rsa = new RSA(); 
         // String string = "This"; 
         // String encypted = rsa.encrypt(string, n, 49);
@@ -30,11 +30,11 @@ public class Bonus {
 
         
         try(PrintWriter pwriter = new PrintWriter(outputFile);){
-            // for(Long key: keys){
+            for(Long key: keys){
                 
-                
-            // }
-            pwriter.println(rsa.decrypt(encypted, n, keys.get(100))+"\n");
+                pwriter.println(rsa.decrypt(encypted, n, key)+"\n");
+            }
+            
             
         }
         time = System.currentTimeMillis() - time;
